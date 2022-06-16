@@ -7,6 +7,19 @@ document does not describe how to install curl or libcurl using such a binary
 package. This document describes how to compile, build and install curl and
 libcurl from source code.
 
+## Building using Conan
+
+You can download and install libcurl using [Conan, the C++ package Manager](https://conan.io/):
+
+    pip3 install conan --upgrade
+    conan install libcurl/7.83.1@ -g CMakeDeps
+
+There are precompiled binaries for many platforms as well as the option to build from source for your platform.
+[More install options for Conan](https://docs.conan.io/en/latest/installation.html) are available for your convience.
+Conan also [supports many more build systems](https://docs.conan.io/en/latest/integrations/build_system.html).
+
+The libcurl recipe in [ConanCenter](https://conan.io/center/) are maintained by the Conan team and a dedicated community. If the version is out of date, please [create an issue](https://github.com/conan-io/conan-center-index/issues/new?title=libcurl:) on the ConanCenter repository.
+
 ## Building using vcpkg
 
 You can download and install curl and libcurl using the [vcpkg](https://github.com/Microsoft/vcpkg/) dependency manager:
